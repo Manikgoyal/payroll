@@ -6,6 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Dazzler Login Portal</title>
 <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
 
 </head>
 <body>
@@ -43,7 +45,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="item active">
-                <img src="img/img1.jpg"/>
+                <img src="img/img2.jpg"/>
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Payroll Slider</h1>
@@ -63,12 +65,12 @@
                 </div>
             </div>
             <div class="item">
-                <img src="img/img3.jpg"/>
+                <img src="img/img2.jpg"/>
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Payroll Slider</h1>
-                        <p>This is my first Application</p>
-                        <p><a class="btn btn-primary">SignUp</a></p>
+                        <div class="col-md-12">
+                <h2>Login Form</h2>
+            </div>
                     </div>
                 </div>
             </div>
@@ -81,6 +83,42 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
     </div>
+    
+    
+    <!------  Login Form  ----->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Login Form</h2>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!----Font Awesome Fotter -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well">
+                   <a href="#"><i class="largeIcon fa fa-android"></i></a> 
+                   <a href="#"> <i class="largeIcon fa fa-digg"></i></a> 
+                    <a href="#"><i class="largeIcon fa fa-facebook"></i></a> 
+                    <a href="#"><i class="largeIcon fa fa-google-plus"></i></a> 
+                    <a href="#"><i class="largeIcon fa fa-twitter"></i></a> 
+                    <a href="#"><i class="largeIcon fa fa-jsfiddle"></i></a> 
+                    <a href="#"><i class="largeIcon fa fa-html5"></i></a> 
+                    <a href="#"><i class="largeIcon fa fa-pagelines"></i></a> 
+                    <a href="#"><i class="largeIcon fa fa-linkedin"></i></a> 
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
     
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
