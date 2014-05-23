@@ -6,6 +6,9 @@
   <packaging>war</packaging>
   <name>payroll</name>
   <description>payroll</description>
+  <properties>
+		<hibernate.version>4.2.0.Final</hibernate.version>
+	</properties>
   <dependencies>
   <dependency>
     <groupId>org.codehaus.jackson</groupId>
@@ -30,16 +33,35 @@
 	<version>1.2</version>
 </dependency>
 
-<dependency>
+                <dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+                
+                <dependency>
 	<groupId>javax.servlet</groupId>
-	<artifactId>servlet-api</artifactId>
-	<version>2.5</version>
+	<artifactId>jsp-api</artifactId>
+	<version>2.0</version>
 </dependency>
+
   <dependency>
 	<groupId>org.springframework</groupId>
 	<artifactId>spring-jdbc</artifactId>
 	<version>3.2.5.RELEASE</version>
 </dependency>
+  <dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-tx</artifactId>
+	<version>3.2.5.RELEASE</version>
+</dependency>
+  <dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-orm</artifactId>
+	<version>3.2.5.RELEASE</version>
+</dependency>
+
 <dependency>
 	    <groupId>javax.mail</groupId>
 	    <artifactId>mail</artifactId>
@@ -82,6 +104,34 @@
     <artifactId>poi</artifactId>
     <version>3.7</version>
 </dependency>
+
+<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+                <dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+                <dependency>
+			<groupId>javassist</groupId>
+			<artifactId>javassist</artifactId>
+			<version>3.12.1.GA</version>
+		</dependency>
+                <dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+			<version>2.2.2</version>
+		</dependency>
+                
+                
 	
   </dependencies>
 </project>
