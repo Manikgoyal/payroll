@@ -28,7 +28,7 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = " com/techdazzler")
+@ComponentScan(basePackages = "com/techdazzler")
 @EnableTransactionManagement
 @PropertySource("classpath:application.properties")
 
