@@ -22,6 +22,7 @@ import org.springframework.web.servlet.DispatcherServlet;
 public class Initializer implements WebApplicationInitializer{
 
     public void onStartup(ServletContext sc) throws ServletException {
+    	System.out.println("hello inside");
         AnnotationConfigWebApplicationContext ctx=new AnnotationConfigWebApplicationContext();
         ctx.register(AppConfig.class);
         sc.addListener(new ContextLoaderListener(ctx));

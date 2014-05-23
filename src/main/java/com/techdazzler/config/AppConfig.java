@@ -62,6 +62,7 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         return dataSource;
     }
 
+    @Bean
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
         sessionFactoryBean.setDataSource(dataSource());
