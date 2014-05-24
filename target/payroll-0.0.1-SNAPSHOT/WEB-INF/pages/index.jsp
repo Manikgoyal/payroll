@@ -1,3 +1,6 @@
+
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
          pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -50,18 +53,22 @@
                         <div class="carousel-caption">
                             <div class="col-md-12">
                                 
-                                <form class="form-horizontal">
+                                <form:form class="form-horizontal" modelAttribute="users" method="post">
                                     <div class="form-group">
                                         <label for="username" class="col-sm-2 control-label">User Name</label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control" placeholder="Enter username"/>
-                                        </div>
+                                            <spring:bind path="username">
+                                                <input type="text" class="form-control" name="username" id="username" placeholder="Enter username"/>
+                                        </spring:bind>
+                                            </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="password" class="col-sm-2 control-label">Password</label>
                                         <div class="col-sm-6">
-                                            <input type="password" class="form-control" placeholder="Enter Password"/>
-                                        </div>
+                                            <spring:bind path="password">
+                                                <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password"/>
+                                            </spring:bind>
+                                            </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-6">
@@ -69,7 +76,7 @@
                                             <button class="btn btn-default" type="reset">Clear</button>
                                         </div>
                                     </div>
-                                </form>
+                                </form:form>
                             </div>
                         </div>
                     </div>
@@ -79,18 +86,22 @@
                     <div class="container">
                         <div class="carousel-caption">
                             <div class="col-md-12">
-                                <form class="form-horizontal">
+                                <form:form class="form-horizontal" modelAttribute="users" method="post">
                                     <div class="form-group">
                                         <label for="username" class="col-sm-2 control-label">User Name</label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control" placeholder="Enter username"/>
-                                        </div>
+                                            <spring:bind path="username">
+                                                <input type="text" class="form-control" name="username" id="username" placeholder="Enter username"/>
+                                        </spring:bind>
+                                            </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="password" class="col-sm-2 control-label">Password</label>
                                         <div class="col-sm-6">
-                                            <input type="password" class="form-control" placeholder="Enter Password"/>
-                                        </div>
+                                            <spring:bind path="password">
+                                                <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password"/>
+                                            </spring:bind>
+                                            </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-6">
@@ -98,7 +109,7 @@
                                             <button class="btn btn-default" type="reset">Clear</button>
                                         </div>
                                     </div>
-                                </form>
+                                </form:form>
                             </div>
                         </div>
                     </div>
@@ -108,18 +119,22 @@
                     <div class="container">
                         <div class="carousel-caption">
                             <div class="col-md-12">
-                                <form class="form-horizontal">
+                                <form:form class="form-horizontal" modelAttribute="users" method="post">
                                     <div class="form-group">
                                         <label for="username" class="col-sm-2 control-label">User Name</label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control" placeholder="Enter username"/>
-                                        </div>
+                                            <spring:bind path="username">
+                                                <input type="text" class="form-control" name="username" id="username" placeholder="Enter username"/>
+                                        </spring:bind>
+                                            </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="password" class="col-sm-2 control-label">Password</label>
                                         <div class="col-sm-6">
-                                            <input type="password" class="form-control" placeholder="Enter Password"/>
-                                        </div>
+                                            <spring:bind path="password">
+                                                <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password"/>
+                                            </spring:bind>
+                                            </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-6">
@@ -127,7 +142,7 @@
                                             <button class="btn btn-default" type="reset">Clear</button>
                                         </div>
                                     </div>
-                                </form>
+                                </form:form>
                             </div>
                         </div>
                     </div>
