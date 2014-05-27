@@ -32,9 +32,15 @@ public class Users implements Serializable{
     private String name;
     
     private String password;
+    
     @OneToMany(fetch = FetchType.LAZY,mappedBy = "pk.users",cascade = CascadeType.ALL)
     private Set<UserGroup> usergroups=new HashSet<UserGroup>(0);
-
+    
+    @OneToMany(fetch = FetchType.LAZY,mappedBy = "pk1.permissions",cascade = CascadeType.ALL)
+    private Set<UserPermission> userPermissions=new HashSet<UserPermission>(0);
+    
+    
+    
     public Set<UserGroup> getUsergroups() {
         return usergroups;
     }
@@ -43,9 +49,6 @@ public class Users implements Serializable{
         this.usergroups = usergroups;
     }
 
-    
-    
-    
     
     
     public String getUsername() {
@@ -72,5 +75,15 @@ public class Users implements Serializable{
         this.password = password;
     }
 
+    public Set<UserPermission> getUserPermissions() {
+        return userPermissions;
+    }
+
+    public void setUserPermissions(Set<UserPermission> userPermissions) {
+        this.userPermissions = userPermissions;
+    }
+
+    
+    
     
 }

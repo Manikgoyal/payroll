@@ -9,6 +9,7 @@ package com.techdazzler.model;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -35,6 +36,17 @@ public class Groups implements Serializable {
     @OneToMany(fetch = FetchType.LAZY,mappedBy = "pk.groups")
     private Set<UserGroup> userGroups=new HashSet<UserGroup>(0);
 
+    @OneToMany(fetch = FetchType.LAZY,mappedBy = "pk2.groups")
+    private Set<GroupPermissions> userPermissions=new HashSet<GroupPermissions>(0);
+
+    public Set<GroupPermissions> getUserPermissions() {
+        return userPermissions;
+    }
+
+    public void setUserPermissions(Set<GroupPermissions> userPermissions) {
+        this.userPermissions = userPermissions;
+    }
+
     
     
     public Set<UserGroup> getUserGroups() {
@@ -44,8 +56,6 @@ public class Groups implements Serializable {
     public void setUserGroups(Set<UserGroup> userGroups) {
         this.userGroups = userGroups;
     }
-    
-    
     
     
     public int getGroupid() {
@@ -72,6 +82,7 @@ public class Groups implements Serializable {
         this.description = description;
     }
 
+    
         
    
     

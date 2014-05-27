@@ -23,7 +23,7 @@ import javax.persistence.Transient;
 @Entity
 @Table(name = "user_group",catalog = "hibernatedb")
 @AssociationOverrides({
-    @AssociationOverride(name = "pk.users",joinColumns = @JoinColumn(name = "id_student")),
+    @AssociationOverride(name = "pk.users",joinColumns = @JoinColumn(name = "id_users")),
     @AssociationOverride(name = "pk.groups",joinColumns = @JoinColumn(name = "id_groups"))
 })
 public class UserGroup implements Serializable{
@@ -31,7 +31,7 @@ public class UserGroup implements Serializable{
     @EmbeddedId
     private UserGroupId pk=new UserGroupId();
     
-    private String createDate;
+    private String status;
 
     @Transient
     public Users getUsers() {
@@ -52,8 +52,6 @@ public class UserGroup implements Serializable{
     }
     
     
-    
-    
     public UserGroupId getPk() {
         return pk;
     }
@@ -62,13 +60,15 @@ public class UserGroup implements Serializable{
         this.pk = pk;
     }
 
-    public String getCreateDate() {
-        return createDate;
+    public String getStatus() {
+        return status;
     }
 
-    public void setCreateDate(String createDate) {
-        this.createDate = createDate;
+    public void setStatus(String status) {
+        this.status = status;
     }
+
+    
     
     
     
