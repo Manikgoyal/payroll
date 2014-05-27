@@ -53,7 +53,7 @@
                         <div class="carousel-caption">
                             <div class="col-md-12">
                                 
-                                <form:form class="form-horizontal" modelAttribute="users" method="post">
+                                <form:form class="form-horizontal" modelAttribute="users" method="post" action="login">
                                     <div class="form-group">
                                         <label for="username" class="col-sm-2 control-label">User Name</label>
                                         <div class="col-sm-6">
@@ -86,7 +86,7 @@
                     <div class="container">
                         <div class="carousel-caption">
                             <div class="col-md-12">
-                                <form:form class="form-horizontal" modelAttribute="users" method="post">
+                                <form:form class="form-horizontal" modelAttribute="users" method="post" action="login">
                                     <div class="form-group">
                                         <label for="username" class="col-sm-2 control-label">User Name</label>
                                         <div class="col-sm-6">
@@ -119,7 +119,7 @@
                     <div class="container">
                         <div class="carousel-caption">
                             <div class="col-md-12">
-                                <form:form class="form-horizontal" modelAttribute="users" method="post">
+                                <form:form class="form-horizontal" modelAttribute="users" method="post" action="login">
                                     <div class="form-group">
                                         <label for="username" class="col-sm-2 control-label">User Name</label>
                                         <div class="col-sm-6">
